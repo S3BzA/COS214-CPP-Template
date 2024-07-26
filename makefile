@@ -19,4 +19,4 @@ gdb: # Assumes gdb is installed
 valgrind: # Assumes valgrind is installed
 	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes -s ./build/main
 
-.PHONY: all build clean run debug valgrind
+.PHONY: all build clean run gdb valgrind
