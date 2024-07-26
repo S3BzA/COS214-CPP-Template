@@ -1,10 +1,8 @@
-all:
-	rm -f main
-	g++ -std=c++11 -g src/* -o build/main
-	./build/main
+all: build run
 
 build:
-	rm -f main
+	mkdir -p build
+	rm -f build/*
 	g++ -std=c++11 -g src/* -o build/main
 
 clean:
